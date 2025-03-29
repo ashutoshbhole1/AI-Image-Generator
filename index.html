@@ -21,7 +21,9 @@
                 <div class="nav">
                     <div class="nav-lft">
                         <!-- <img src="" alt=""> -->
-                        <i class="fa-solid fa-wand-sparkles"></i>
+                        <div class="logo">
+                            <i class="fa-solid fa-wand-sparkles"></i>
+                        </div>
                         <h1>AI Image Generator</h1>
                     </div>
 
@@ -34,13 +36,18 @@
                 </div>
 
                 <div class="prompt-box">
-                    <textarea name="" id="prompt" required autofocus></textarea>
-                    <button type="button" class="prompt-btn">
-                        <!-- prompt button icon -->
-                        <i class="fa-solid fa-dice"></i>
-                    </button>
+                    <div class="prompt-container">
+                        <textarea name="" id="prompt" required autofocus
+                            placeholder="Describe your Image here..."></textarea>
 
+                        <button type="button" class="prompt-btn">
+                            <!-- prompt button icon -->
+                            <i class="fa-solid fa-dice"></i>
+                        </button>
+
+                    </div>
                     <div class="choice">
+
                         <div class="options">
                             <!-- 3 options -->
                             <select class="custom-select" required>
@@ -68,10 +75,12 @@
                             </select>
 
                         </div>
+                        
                         <button type="submit" class="generate-btn">
                             <i class="fa-solid fa-wand-sparkles"></i>
                             Generate
                         </button>
+                        
                     </div>
                 </div>
             </div>
