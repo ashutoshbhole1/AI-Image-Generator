@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>AI Image Generator</title>
 </head>
@@ -11,12 +15,95 @@
 <body>
     <!-- The code starts here -->
 
+    <main>
+        <div class="container">
+            <div class="hero">
+                <div class="nav">
+                    <div class="nav-lft">
+                        <img src="" alt="">
+                        <h1>AI Image Generator</h1>
+                    </div>
+
+                    <div class="nav-rgt">
+                        <div class="mode">
+                            <!-- icon -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prompt-box">
+                    <textarea name="" id="prompt" required autofocus></textarea>
+                    <button type="button" class="prompt-btn">
+                        <!-- prompt button icon -->
+                        <i class="fa-solid fa-dice"></i>
+                    </button>
+
+                    <div class="choice">
+                        <div class="options">
+                            <!-- 3 options -->
+                            <select class="custom-select" required>
+                                <option value="" selected disabled>Select Model</option>
+                                <option value="black-forest-labs/FLUX.1-dev">FLUX.1-dev</option>
+                                <option value="black-forest-labs/FLUX.1-schene11">FLUX.1-schene11</option>
+                                <option value="stabilityai/stable-diffusion-xl-base-1.0">Stable Diffusion XL</option>
+                                <option value="runwayml/stable-diffusion-v1-5">Stable Diffusion v1.5</option>
+                                <option value="prompthero/openjourney">Open Journey</option>
+                            </select>
+
+                            <select class="custom-select" required>
+                                <option value="" selected disabled>Image Count</option>
+                                <option value="1">1 Image</option>
+                                <option value="2">2 Image's</option>
+                                <option value="3">3 Image's</option>
+                                <option value="4">4 Image's</option>
+                            </select>
+
+                            <select class="custom-select" required>
+                                <option value="" selected disabled>Aspect Ratio</option>
+                                <option value="1/1">Square (1:1)</option>
+                                <option value="16/9">Landscape (16:9)</option>
+                                <option value="9/16">Portrait (9:16)</option>
+                            </select>
+
+                        </div>
+                        <button type="submit" class="generate-btn"><i class="fa-solid fa-wand-sparkles"></i>
+                            Generate</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Result Images -->
+            <div class="result">
+                
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- gsap cdn -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js" integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js" integrity="sha512-AcqPGqrrAEtEwe+ADO5R8RbdFi7tuU7b/A2cJJH0Im0D18NRk5p5s4B3E5PMuO81KFw0ClN7J5SHVUJz7KOb0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"
+        integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js"
+        integrity="sha512-AcqPGqrrAEtEwe+ADO5R8RbdFi7tuU7b/A2cJJH0Im0D18NRk5p5s4B3E5PMuO81KFw0ClN7J5SHVUJz7KOb0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Scripts -->
-     <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
