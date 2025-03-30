@@ -20,8 +20,7 @@ const promptForm = document.querySelector(".prompt-form");
 
 const gridGallery = document.querySelector(".gallery-grid");
 
-// const API_KEY = "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";
-// const API_KEY = "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";
+
 // theme toggle
 const theme = () => {
 
