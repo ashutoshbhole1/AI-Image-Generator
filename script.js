@@ -10,6 +10,7 @@ let mode = document.querySelector(".theme-toggle i");
 let dark = false;
 
 let promptBtn = document.querySelector(".prompt-btn");
+let generateBtn = document.querySelector(".generate-btn");
 let promptInput = document.querySelector(".prompt-input");
 
 const modelSelect = document.getElementById("model-select");
@@ -117,6 +118,7 @@ const generateImages = async (selectedModel, imageCount, aspectRatio, promptText
   const MODEL_URL = `https://router.huggingface.co/hf-inference/models/${selectedModel}`;
 
   const { width, height } = getImageDimension(aspectRatio);
+  generateBtn.setAttribute("disabled","true");
 
   // Array of img generation promises
   const imagePromises = Array.from({ length: imageCount }, async (API_KEY, i) => {
@@ -145,11 +147,16 @@ const generateImages = async (selectedModel, imageCount, aspectRatio, promptText
     }
     catch (err) {
       log(err);
+      const imgCard = document.getElementById(`img-card-${i}`);
+      imgCard.classList.replace("loading", "error");
+      imgCard.querySelector(".status-text").textContent = "Generation failed! Check console for more details.";
+
     }
   });
 
 
   await Promise.allSettled(imagePromises);
+  generateBtn.removeAttribute("disabled");
 };
 
 

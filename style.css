@@ -258,6 +258,10 @@ main {
     cursor: pointer;
     transition: .3s ease-in-out;
 }
+.choice .generate-btn:disabled{
+    opacity: .6;
+    pointer-events: none;
+}
 
 .choice .generate-btn:hover {
     box-shadow: 1px 3px 15px var(--color-primary);
