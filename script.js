@@ -18,7 +18,7 @@ const ratioSelect = document.getElementById("ratio-select");
 
 const promptForm = document.querySelector(".prompt-form");
 
-const gridGallery = document.querySelector(".gallery-grid");
+const gridGallery =  document.querySelector(".gallery-grid");
 
 
 // theme toggle
