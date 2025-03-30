@@ -12,7 +12,7 @@
     <title>AI Image Generator</title>
 </head>
 
-<body>
+<body class="body">
     <!-- The code starts here -->
 
     <main>
@@ -35,9 +35,9 @@
                     </div>
                 </div>
 
-                <div class="prompt-box">
+                <form class="prompt-box prompt-form">
                     <div class="prompt-container">
-                        <textarea name="" id="prompt" required autofocus
+                        <textarea name="" class="prompt-input" required autofocus
                             placeholder="Describe your Image here..."></textarea>
 
                         <button type="button" class="prompt-btn">
@@ -50,7 +50,7 @@
 
                         <div class="options">
                             <!-- 3 options -->
-                            <select class="custom-select" required>
+                            <select class="custom-select" id="model-select" required>
                                 <option value="" selected disabled>Select Model</option>
                                 <option value="black-forest-labs/FLUX.1-dev">FLUX.1-dev</option>
                                 <option value="black-forest-labs/FLUX.1-schene11">FLUX.1-schene11</option>
@@ -59,7 +59,7 @@
                                 <option value="prompthero/openjourney">Open Journey</option>
                             </select>
 
-                            <select class="custom-select" required>
+                            <select class="custom-select" id="count-select" required>
                                 <option value="" selected disabled>Image Count</option>
                                 <option value="1">1 Image</option>
                                 <option value="2">2 Image's</option>
@@ -67,7 +67,7 @@
                                 <option value="4">4 Image's</option>
                             </select>
 
-                            <select class="custom-select" required>
+                            <select class="custom-select" id="ratio-select" required>
                                 <option value="" selected disabled>Aspect Ratio</option>
                                 <option value="1/1">Square (1:1)</option>
                                 <option value="16/9">Landscape (16:9)</option>
@@ -75,20 +75,70 @@
                             </select>
 
                         </div>
-                        
+
                         <button type="submit" class="generate-btn">
                             <i class="fa-solid fa-wand-sparkles"></i>
                             Generate
                         </button>
-                        
+
                     </div>
-                </div>
+                </form>
             </div>
+
+
+
+
+
+
+
 
             <!-- Result Images -->
-            <div class="result">
+            <div class="result gallery-grid">
+
+                <!-- Image card 1 -->
+                 <!-- <div class="image-card loading ">
+
+                    Image Loading Animation
+                    <div class="status-container ">
+                        <div class="spinner"></div>
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        <p class="status-txt">Generating...</p>
+                    </div>
+                    
+                    
+                    <img src="Img/test.png" class="result-img">
+                    <div class="img-overlay">
+                        <button type="button" class="download-btn">
+                            <i class="fa-solid fa-download"></i>
+                        </button>
+                    </div>
+                </div>
+             -->
+
+
 
             </div>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
         </div>
     </main>
 
