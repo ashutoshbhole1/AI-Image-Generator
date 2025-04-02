@@ -2,8 +2,18 @@
 
 AI Image Generator is a cutting-edge web application that transforms text prompts into high-quality images using advanced deep learning models like Stable Diffusion and Flux. It features a sleek UI with both Dark and Light mode options for an enhanced user experience.
 
-![AI Image Generator - Dark Mode](./Img/dark%20mode%20ai%20image%20genn.jpeg)
-![AI Image Generator - Light Mode](./Img/light%20mode%20ai%20image%20gen.jpeg)
+
+## Dark Mode 🌙
+
+![Dark Mode](./Img/dark%20mode%20ai%20image%20genn.jpeg)
+
+---
+
+## Light Mode ☀️
+
+![Light Mode](./Img/light%20mode%20ai%20image%20gen.jpeg)
+<!-- ![AI Image Generator - Dark Mode](./Img/dark%20mode%20ai%20image%20genn.jpeg)
+![AI Image Generator - Light Mode](./Img/light%20mode%20ai%20image%20gen.jpeg) -->
 
 ## Features
 
