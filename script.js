@@ -149,8 +149,8 @@ const generateImages = async (selectedModel, imageCount, aspectRatio, promptText
   // const API_KEY =  `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`;
   // const API_KEY =  `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`;// for backup
 
-  const API_KEY = `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`; // Ashu College READ
-  // const API_KEY = `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`; // kanha ashu  tech READ Access
+  // const API_KEY = `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`; // Ashu College READ
+  const API_KEY = `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`; // kanha ashu  tech READ Access
   // const API_KEY =  `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`;// for backup with READ Access ( Paul Krisi )
 
   const { width, height } = getImageDimension(aspectRatio);
