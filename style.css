@@ -27,7 +27,7 @@
     --color-container: #ffffff;
 
     --color-container-shadow: #d498d5;
-    
+
     --color-box-shadow: #f6c8fe;
     background-image: linear-gradient(50deg, #eaaaff, #e7ccf6);
     --color-gradient: linear-gradient(45deg, #ee31ff, #bc00d5);
@@ -40,7 +40,7 @@ body.dark-theme {
     --color-text: #F3F4F6;
     --color-placeholder: #A3B6DC;
     --color-border: #334155;
-    
+
     --color-container: #331a3e;
     --color-container-shadow: #241c23;
     --color-box-shadow: #8d249f;
@@ -257,9 +257,10 @@ main {
     letter-spacing: .5px;
     cursor: pointer;
     transition: .3s ease-in-out;
-   
+
 }
-.choice .generate-btn:disabled{
+
+.choice .generate-btn:disabled {
     opacity: .6;
     pointer-events: none;
 }
@@ -290,13 +291,14 @@ body:is(.dark-theme) .choice .generate-btn:hover {
     gap: 1rem;
 }
 
-.result:has(.image-card){
+.result:has(.image-card) {
     margin-top: 1rem;
 }
+
 .image-card {
     min-width: 13rem;
     min-height: 8rem;
-   
+
 
     background: var(--color-input);
     border: 1px solid var(--color-primary);
@@ -408,6 +410,7 @@ body:is(.dark-theme) .choice .generate-btn:hover {
     font-size: 1.5rem;
     color: #ff0000;
 }
+
 .image-card.error .status-container .status-txt {
     font-size: .8rem;
     color: var(--color-placeholder);
@@ -426,4 +429,130 @@ body:is(.dark-theme) .choice .generate-btn:hover {
     to {
         transform: rotate(360deg);
     }
+}
+
+/* responsive Code starts */
+
+@media screen and (max-width: 1300px) {
+    .container {
+        width: 80%;
+    }
+
+    .choice {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .choice .options {
+        margin: auto;
+    }
+
+    .generate-btn {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .container {
+        width: 85%;
+    }
+
+    .choice {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .choice .options {
+        /* margin: auto; */
+        flex-wrap: wrap;
+    }
+
+    .generate-btn {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .container {
+        width: 95%;
+        border-radius: .7rem;
+        padding: 1.3rem .8rem;
+        border-left: .8px solid var(--color-primary-dark-1);
+        border-right: .8px solid var(--color-primary-dark-1);
+        border-bottom: .8px solid var(--color-primary-dark-1);
+    }
+
+    .choice {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .choice .options {
+        /* margin: auto; */
+        flex-wrap: wrap;
+    }
+
+    .generate-btn {
+        margin: auto;
+    }
+
+
+    .hero .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 3rem;
+    }
+
+    .nav .nav-lft {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        height: 100%;
+    }
+
+    .nav .nav-lft .logo {
+        width: 2.7rem;
+        height: 2.7rem;
+        font-size: 1.2rem;
+        border-radius: .4rem;
+    }
+
+    .nav .nav-lft h1 {
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+
+    .nav-rgt .mode {
+        width: 2.7rem;
+        height: 2.5rem;
+    }
+
+
+    .prompt-box textarea {
+        border-radius: .5rem;
+    }
+
+    .choice {
+        gap: 1.2rem;
+    }
+    .choice .options {
+        justify-content: center;
+    }
+    .choice .options select {
+        width: 70%;
+        min-width: none;
+        border-radius: .3rem;
+    }
+
+.choice .generate-btn{
+    width: 13rem;
+    /* padding: .8rem 0; */
+    height: 2.9rem;
+    border-radius:.5rem;
+    font-size: 1.1rem;
+}
+
 }
