@@ -57,7 +57,10 @@ main {
     width: 100%;
     background: var(background-image);
     display: flex;
-    justify-content: center;
+    justify-content: space-between
+    ;
+    flex-direction: column;
+    align-items: center;
     color: var(--color-text);
 }
 
@@ -431,6 +434,18 @@ body:is(.dark-theme) .choice .generate-btn:hover {
     }
 }
 
+
+footer h4{
+    font-weight: 600;
+    margin-bottom: .5rem;
+    color: #3a3939;
+font-style: italic;
+}
+
+footer h4 a{
+    text-decoration: none;
+    color: #b400e5;
+}
 /* responsive Code starts */
 
 @media screen and (max-width: 1300px) {
