@@ -533,10 +533,11 @@ body:is(.dark-theme) .choice .generate-btn:hover {
 
     .prompt-box textarea {
         border-radius: .5rem;
+        min-height: 9rem;
     }
 
     .choice {
-        gap: 1.2rem;
+        gap: 1.8rem;
     }
     .choice .options {
         justify-content: center;
@@ -551,7 +552,7 @@ body:is(.dark-theme) .choice .generate-btn:hover {
     width: 13rem;
     /* padding: .8rem 0; */
     height: 2.9rem;
-    border-radius:.5rem;
+    border-radius:.4rem;
     font-size: 1.1rem;
 }
 
