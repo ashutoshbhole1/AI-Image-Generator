@@ -476,7 +476,7 @@ body:is(.dark-theme) .choice .generate-btn:hover {
     .container {
         width: 95%;
         border-radius: .7rem;
-        padding: 1.3rem .8rem;
+        padding: 1.3rem .6rem;
         border-left: .8px solid var(--color-primary-dark-1);
         border-right: .8px solid var(--color-primary-dark-1);
         border-bottom: .8px solid var(--color-primary-dark-1);
